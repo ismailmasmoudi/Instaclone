@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instaclone</title>
+    <link rel="shortcut icon" href="./favicon-16x16.png" type="/favicon-16x16.png">
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="preconnect">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="preconnect">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+
+</head>
+
+<body onload="render()">
+    <div class="midle-and-right-body-container">
+
+        <div class="midlle-body-container">
+            <div class="story-container">
+                <div class="for-me">
+                    <div class="for-me-title">
+                        <p>Für dich</p>
+                    </div>
+                    <div class="followed-title">
+                        <p> Gefolgt</p>
+                    </div>
+                </div>
+                <div class="horizontal-line"></div>
+                <div id="story-content" class="story-content">
+
+                </div>
+            </div>
+            <div id="content">
+
+            </div>
+        </div>
+        <div class="friends-proposition">
+
+            <div class="my-profil">
+                <div class="left-side-profil-proposition">
+                    <div class="proposition-logo-cadre">
+                        <a > <img class="proposition-logo" src="./anonyme.jpg" alt=""> </a>
+                    </div>
+                    <div class="proposition-title">
+                        <a  class="friend-name">Anonyme</a>
+                        <p class="new-in-insta">Anonyme</p>
+                    </div>
+
+
+                </div>
+                <div class="right-side-profil-proposition">
+                    <a  class="follow-anker">Wechseln</a>
+                </div>
+
+            </div>
+
+            <div class="proposition-for-you">
+                <div>
+                    <p class="proposition-for-you-title">Vorschläge für dich</p>
+                </div>
+                <a  class="see-all-anker">Alle ansehen</a>
+
+            </div>
+            <div class="propositions-friends" id="propositions-friends">
+
+
+            </div>
+            <div class="under-my-propositions-container">
+                <div class="buttons-datenshutz">
+                    <a >Info</a>.
+                    <a >Hilfe</a>.
+                    <a >Presse</a>.
+                    <a >API</a>.
+                    <a >Jobs</a>.
+                    <a >Datenrichtline</a>.
+                    <a >Nutzungsbedingungen</a>.
+                    <a >Standorte</a>.
+                    <a >Sprache</a>.
+                    <a >Masmoudi Verifed</a>
+                </div>
+                <div class="instaclone-2024">
+                    <p>© 2024 INSTACLONE </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="menu">
+            <a href="index.html">
+                <p class="insta-menu-logo">Instaclone</p>
+            </a>
+            <div class="other-button-menu">
+                <a class="anker-button-menu" href="index.html"><img class="icon-button" src="./home.png" alt="">
+                    <p class="menu-title"><b>Startseite</p></b>
+                </a>
+                <a class="anker-button-menu" > <img class="icon-button" src="./suche.png" alt="">
+                    <p class="menu-title">Suche</p>
+                </a>
+                <a class="anker-button-menu" ><img class="icon-button" src="./entdecken.png" alt="">
+                    <p class="menu-title">Entdecken</p>
+                </a>
+                <a class="anker-button-menu" ><img class="icon-button" src="./reels.png" alt="">
+                    <p class="menu-title">Reels</p>
+                </a>
+                <a class="anker-button-menu" ><img class="icon-button" src="./nachrichten.png" alt="">
+                    <p class="menu-title">Nachrichten</p>
+                </a>
+                <a class="anker-button-menu" ><img class="icon-button" src="./like-white.png" alt="">
+                    <p class="menu-title">Benachrichtigung</p>
+                </a>
+                <a class="anker-button-menu" ><img class="icon-button" src="./erstellen.png" alt="">
+                    <p class="menu-title">Erstellen</p>
+                </a>
+                <a class="anker-button-menu " ><img class="icon-button icon-button-profil" src="./anonyme.jpg"
+                        alt="">
+                    <p class="menu-title">Profil</p>
+                </a>
+                <a class="anker-button-menu anker-button-menu-mehr" ><img class="icon-button" src="./mehr.png"
+                        alt="">
+                    <p class="menu-title">Mehr</p>
+                </a>
+            </div>
+
+        </div>
+        <div class="menu-small">
+            <a class=" anker-button-menu-insta-logo" href="index.html"><img class="icon-button-insta"
+                    src="./insta-logo.png" alt=""></a>
+            <div class="other-button-menu">
+                <a class="anker-button-menu" href="index.html"><img class="icon-button" src="./home.png" alt=""></a>
+                <a class="anker-button-menu anker-button-menu-search" > <img class="icon-button"
+                        src="./suche.png" alt=""></a>
+                <a class="anker-button-menu" ><img class="icon-button" src="./entdecken.png" alt=""></a>
+                <a class="anker-button-menu anker-button-menu-reels " ><img class="icon-button"
+                        src="./reels.png" alt=""></a>
+                <a class="anker-button-menu" ><img class="icon-button" src="./nachrichten.png" alt=""></a>
+                <a class="anker-button-menu" ><img class="icon-button" src="./like-white.png" alt=""></a>
+                <a class="anker-button-menu" ><img class="icon-button" src="./erstellen.png" alt=""></a>
+                <a class="anker-button-menu " ><img class="icon-button icon-button-profil" src="./anonyme.jpg"
+                        alt=""></a>
+                <a class="anker-button-menu-mehr" ><img class="icon-button" src="./mehr.png" alt=""></a>
+            </div>
+
+</body>
+
+</html>

@@ -1,0 +1,863 @@
+body {
+    background-color: white;
+    font-size: 16px;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.card-post {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+    font-size: 14px;
+
+}
+
+.images-description-container {
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+.logo-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.post-image {
+    height: 900px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.left-side {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    display: flex;
+
+
+}
+
+.logo-author-description-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-block-start: 0px;
+    margin-block-end: 1px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.lad-right {
+    padding-left: 10px;
+}
+
+.lad-left {
+    border-radius: 50%;
+    background: linear-gradient(to right, red, orange);
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+}
+
+.card-description {
+    display: flex;
+    padding-top: 5px;
+}
+
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.like-icons {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    padding-bottom: 0;
+    transition: transform .2s;
+    filter: saturate(10) contrast(22) brightness(0.1);
+
+}
+
+.like-icons:hover {
+    filter: brightness(1.8) blur(1px) contrast(2);
+
+    background-color: white;
+    transform: scale(1.1);
+
+}
+
+.like-icons-save {
+    width: 25px;
+    height: 25px;
+    padding-bottom: 0;
+    transition: transform .2s;
+}
+
+.like-icons-save:hover {
+    background-color: white;
+    transform: scale(1.1);
+
+}
+
+.like-icons-save-black {
+    width: 25px;
+    height: 25px;
+    padding-bottom: 0;
+    transition: transform .2s;
+}
+
+.like-icons-save-black:hover {
+    transform: scale(1.1);
+
+}
+
+.like-icons-red-heart {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    padding-bottom: 0;
+    transition: transform .2s;
+}
+
+.request-anker {
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(115, 115, 115);
+
+}
+
+.like-conatiner {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    align-items: center;
+}
+
+.links-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    height: max-content;
+    width: 250px;
+    background-color: white;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.icon-button {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.icon-button-insta {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-button-insta:hover {
+    width: 41px;
+    height: 41px;
+}
+
+.icon-button:hover {
+    width: 31px;
+    height: 31px;
+}
+
+.icon-button-profil {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.other-button-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.anker-button-menu {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    margin: 3px 10px;
+    width: 200px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-style: normal;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.anker-button-menu-insta-logo {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    margin: 3px 10px;
+    width: 200px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-style: normal;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.anker-button-menu-mehr {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    margin: 3px 10px;
+    width: 200px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-style: normal;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.anker-button-menu:hover {
+    background-color: #F2F2F2;
+
+}
+
+.insta-menu-logo {
+    margin-top: 16px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    margin-bottom: 16px;
+    font-family: "Pacifico", cursive;
+
+}
+
+.comment-container {
+    word-wrap: break-word;
+    width: 450px;
+}
+
+.like-icons:hover {
+    background-color: gray;
+}
+
+.card-comments {
+    padding-top: 5px;
+}
+
+.card-location {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: black;
+    padding-bottom: 5px;
+}
+
+.input-comment {
+
+    padding-top: 5px;
+}
+
+.input-comment-field {
+    width: 1150px;
+    border: none;
+    outline: none;
+}
+
+.post-datum {
+    color: gray;
+    padding-left: 5px;
+    font-size: 14px;
+    align-items: center;
+    margin-bottom: 0;
+
+}
+
+.card-author {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-content {
+    display: contents !important;
+}
+
+.n-display {
+    display: none;
+}
+
+.close-img {
+    height: 20px;
+    width: 20px;
+}
+
+.story-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    width: 55px;
+
+
+}
+
+.story-content,
+.card-post,
+.post-image,
+.like-conatiner,
+.comment-container {
+    width: 100%;
+}
+
+/*change the thinkness of the scrollbar here*/
+.story-content::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/*add a shadow to the scrollbar here*/
+.story-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/*this is the little scrolly dealio in the bar*/
+.story-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(207, 211, 223);
+    height: 3px;
+}
+
+/*nobody needs this little scrollbar corner*/
+.story-content::-webkit-scrollbar-corner {
+    display: none;
+    height: 0px;
+    width: 0px;
+}
+
+
+.story-content {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.gradient-story-image {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: linear-gradient(to right, red, orange);
+    padding: 2px;
+    object-fit: cover;
+}
+
+.story-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.for-me {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    display: flex;
+    justify-content: start;
+    margin-top: 45px;
+    padding-right: 125px;
+}
+
+.followed-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: rgba(128, 128, 128, 0.521);
+    padding-left: 15px;
+
+}
+
+.story-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.horizontal-line {
+    height: 1px;
+    width: 100%;
+    margin-top: 12px;
+    background-color: rgba(0, 0, 0, 0.116);
+
+}
+
+.midlle-body-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    width: 1200px;
+
+}
+
+.friends-proposition {
+    border: 1px none black;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: max-content;
+    align-items: center;
+}
+
+.my-profil {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.my-propositions {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.propositions-friends {
+    margin-bottom: 24px;
+}
+
+.proposition-logo-cadre {
+    width: 45px;
+    height: 45px;
+}
+
+.proposition-logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.right-side-profil-proposition {
+    display: flex;
+    align-items: center;
+}
+
+.left-side-profil-proposition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proposition-title {
+    padding-left: 10px;
+}
+
+.friend-name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+}
+
+.new-in-insta {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(115, 115, 115);
+}
+
+.follow-anker {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(3, 147, 243);
+}
+
+.follow-anker:hover {
+    color: rgb(1, 47, 90);
+}
+
+.proposition-for-you {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+}
+
+.proposition-for-you-title {
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(115, 115, 115);
+    margin-bottom: 12px;
+}
+
+.see-all-anker {
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.see-all-anker:hover {
+
+    color: rgba(115, 115, 115, 0.555);
+}
+
+.under-my-propositions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    height: 85px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(199, 199, 199);
+}
+
+.buttons-datenshutz a {
+    color: rgb(199, 199, 199);
+}
+
+.buttons-datenshutz a:hover {
+    text-decoration: underline;
+}
+
+.share-anker {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(3, 147, 243);
+}
+
+.share-anker:hover {
+    color: rgb(1, 47, 90);
+}
+
+.menu-small {
+    display: none;
+}
+
+.midle-and-right-body-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:2208px) {
+    .post-image {
+        height: 800px;
+    }
+
+    .input-comment-field {
+        width: 850px;
+    }
+
+    .midlle-body-container {
+        width: 900px;
+    }
+
+    .midle-and-right-body-container {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width:1904px) {
+    .post-image {
+        height: 500px;
+    }
+
+    .input-comment-field {
+        width: 550px;
+    }
+
+    .midlle-body-container {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:1590px) {
+    .midle-and-right-body-container {
+        display: flex;
+        margin-left: 230px;
+    }
+
+    .midlle-body-container {
+        padding-left: 0px;
+    }
+
+    .friends-proposition {
+        width: max-content;
+        padding-left: 60px;
+
+    }
+}
+
+@media screen and (max-width:1342px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-small {
+        display: flex !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        height: max-content;
+        width: 60px;
+        background-color: white;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .midle-and-right-body-container {
+        margin-left: 80px;
+    }
+
+    .anker-button-menu-insta-logo {
+        display: flex;
+        align-items: center;
+        padding: 9px;
+        margin: 20px 5px;
+        width: 30px;
+
+    }
+
+    .anker-button-menu {
+        display: flex;
+        align-items: center;
+        padding: 9px;
+        width: 30px;
+
+
+    }
+
+    .anker-button-menu-mehr {
+        display: flex;
+        align-items: center;
+        padding: 9px;
+        width: 30px;
+        width: 200px;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-style: normal;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:1092px) {
+    .friends-proposition {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:714px) {
+    .menu-small {
+        display: flex !important;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        background-color: white;
+    }
+
+    .other-button-menu {
+        border-top: 1px solid #0000003d;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        background-color: white;
+        display: flex !important;
+    }
+
+    .anker-button-menu-mehr,
+    .anker-button-menu-search,
+    .anker-button-menu-reels,
+    .anker-button-menu-insta-logo {
+        display: none;
+    }
+
+    .icon-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-button:hover {
+        width: 40px;
+        height: 40px;
+    }
+
+    .anker-button-menu {
+        width: 40px;
+        padding: 10px 15px;
+    }
+
+    .midlle-body-container {
+        padding-left: 0px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .midle-and-right-body-container {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:684px) {
+    .horizontal-line {
+        height: 1px;
+        width: 100%;
+    }
+
+    .for-me {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    .followed-title {
+        display: none;
+    }
+
+    .post-image {
+        height: 450px;
+    }
+
+    .input-comment-field {
+        width: 400px;
+    }
+
+    .midlle-body-container {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .icon-button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon-button:hover {
+        width: 30px;
+        height: 30px;
+    }
+
+    .anker-button-menu {
+        width: 30px;
+        padding: 8px 6px;
+    }
+}
+
+@media screen and (max-width:474px) {
+
+    .midlle-body-container {
+        width: 390px;
+    }
+
+    .midle-and-right-body-container {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+
+    .input-comment-field {
+
+        width: 340px;
+    }
+
+    .for-me {
+        padding-right: 0px;
+        width: 125px;
+
+    }
+
+}
+
+@media screen and (max-width:400px) {
+
+    .midlle-body-container {
+        width: 360px;
+    }
+
+    .input-comment-field {
+
+        width: 314px;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+
+    .anker-button-menu {
+        padding: 4px 2px;
+    }
+
+    .midlle-body-container {
+        width: 300px;
+    }
+
+    .input-comment-field {
+
+        width: 254px;
+    }
+}
